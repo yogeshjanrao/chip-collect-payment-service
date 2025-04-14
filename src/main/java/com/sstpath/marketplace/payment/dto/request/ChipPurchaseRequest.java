@@ -1,10 +1,12 @@
 package com.sstpath.marketplace.payment.dto.request;
 
+import lombok.Builder;
 import lombok.Data;
 
 import java.util.List;
 
 @Data
+@Builder(toBuilder = true)
 public class ChipPurchaseRequest {
     private String brand_id;
     private String external_id;

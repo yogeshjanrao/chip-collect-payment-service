@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 @FeignClient(name = "ChipCollect", url = "${app.chip-collect.url}", configuration = ChipFeignConfig.class)
-public interface ChipCollectClient {
+public interface    ChipCollectClient {
     
     @PostMapping("/purchases/")
     ChipPurchaseResponse createPurchase(@RequestBody ChipPurchaseRequest request);

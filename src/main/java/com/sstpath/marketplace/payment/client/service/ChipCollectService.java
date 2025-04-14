@@ -12,4 +12,6 @@ import org.springframework.stereotype.Service;
 public class ChipCollectService {
 
     private ChipCollectClient chipCollectClient;
+
+
 }

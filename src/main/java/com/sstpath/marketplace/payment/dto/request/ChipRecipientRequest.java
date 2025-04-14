@@ -1,8 +1,10 @@
 package com.sstpath.marketplace.payment.dto.request;
 
+import lombok.Builder;
 import lombok.Data;
 
 @Data
+@Builder(toBuilder = true)
 public class ChipRecipientRequest {
     private String name;
     private String email;
