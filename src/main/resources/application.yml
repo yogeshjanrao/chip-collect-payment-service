@@ -36,6 +36,7 @@ spring:
       ddl-auto: validate
 
 app:
-  chip-collect:
-    url: https://gate.chip-in.asia/api/v1
-    api-key:
+  api:
+    chip-collect:
+      endpoint: https://gate.chip-in.asia/api/v1
+      api-key:
