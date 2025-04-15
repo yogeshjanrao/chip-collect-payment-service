@@ -1,12 +1,13 @@
 package com.sstpath.marketplace.payment.dto.request;
 
+import java.util.List;
+
+import com.sstpath.marketplace.payment.dto.BeneficiaryDTO;
+
 import lombok.Data;
 
 @Data
 public class ChipPayoutRequest {
-    private String recipient_id;
-    private String external_id;
-    private Integer amount;
-    private String currency;
-    private String description;
+    private String purchaseId;
+    private List<BeneficiaryDTO> payouts;
 }

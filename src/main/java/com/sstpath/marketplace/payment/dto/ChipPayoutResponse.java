@@ -4,6 +4,6 @@ import lombok.Data;
 
 @Data
 public class ChipPayoutResponse {
-    private String id;
-    private String status;
+    private String id; // This is the purchaseId
+    private String redirectUrl;
 }
