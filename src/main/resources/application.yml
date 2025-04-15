@@ -38,5 +38,4 @@ spring:
 app:
   chip-collect:
     url: https://gate.chip-in.asia/api/v1
-    api-key: 
-		secret: 
+    api-key:

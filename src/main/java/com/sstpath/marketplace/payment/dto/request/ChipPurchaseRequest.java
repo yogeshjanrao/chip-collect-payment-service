@@ -1,9 +1,8 @@
 package com.sstpath.marketplace.payment.dto.request;
 
-import java.math.BigDecimal;
-import java.util.List;
-
 import lombok.Data;
+
+import java.util.List;
 
 @Data
 public class ChipPurchaseRequest {
@@ -26,7 +25,7 @@ public class ChipPurchaseRequest {
     @Data
     public static class PurchaseDetails {
         private List<Product> products;
-        private BigDecimal total;
+        private int total;
         private String currency;
         private String invoice;
 
