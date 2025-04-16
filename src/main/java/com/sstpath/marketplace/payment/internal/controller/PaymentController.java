@@ -3,7 +3,6 @@ package com.sstpath.marketplace.payment.internal.controller;
 import com.sstpath.marketplace.payment.api.PaymentApi;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -11,8 +10,4 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class PaymentController implements PaymentApi {
 
-    @Override
-    public ResponseEntity<String> makeOrderPayment(Long orderId) {
-        return null;
-    }
 }
