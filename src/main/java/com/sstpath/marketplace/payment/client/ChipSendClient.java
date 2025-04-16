@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 public interface ChipSendClient {
 
     @PostMapping("/brands")
-    CreateBrandResponse createBrand(CreateBrandRequest request);
+    CreateBrandResponse createBrand(@RequestBody  CreateBrandRequest request);
 
     @PostMapping("/recipients/")
     ChipRecipientResponse createRecipient(@RequestBody ChipRecipientRequest request);
